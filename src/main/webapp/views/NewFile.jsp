@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Toy Store</title>
+    <title>Register - Toy Store</title>
     <style>
         body {
             font-family: 'Comic Sans MS', 'Arial', sans-serif;
@@ -15,7 +15,7 @@
             background-image: url('<%= request.getContextPath() %>/upload/image/background.jpg');
             background-size: cover;
         }
-        .login-container {
+        .register-container {
             background-color: rgba(255, 255, 255, 0.9);
             padding: 30px;
             border-radius: 20px;
@@ -23,20 +23,21 @@
             width: 320px;
             text-align: center;
         }
-        .login-container h1 {
+        .register-container h1 {
             margin-bottom: 20px;
             color: #333;
             font-size: 24px;
         }
-        .login-container input[type="email"],
-        .login-container input[type="password"] {
+        .register-container input[type="email"],
+        .register-container input[type="password"],
+        .register-container input[type="text"] {
             width: 100%;
             padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 10px;
         }
-        .login-container input[type="submit"] {
+        .register-container input[type="submit"] {
             width: 100%;
             padding: 12px;
             background-color: #FF5733;
@@ -47,35 +48,35 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-        .login-container input[type="submit"]:hover {
+        .register-container input[type="submit"]:hover {
             background-color: #C70039;
         }
         .error-message {
             color: red;
             margin-top: 10px;
         }
-        .login-container .footer {
+        .register-container .footer {
             margin-top: 20px;
             font-size: 14px;
         }
-        .login-container .footer a {
+        .register-container .footer a {
             color: #007bff;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Welcome Back!</h1>
-        <form action="users?action=login" method="post">
+    <div class="register-container">
+        <h1>Create Account</h1>
+        <form action="users?action=register" method="post">
             <input type="email" name="email" placeholder="Email" required /><br />
             <input type="password" name="password" placeholder="Password" required /><br />
-            <input type="submit" value="Login" />
+            <input type="text" name="name" placeholder="Name" required /><br />
+            <input type="submit" value="Register" />
         </form>
         <p class="error-message">${errorMessage}</p>
         <div class="footer">
-            <p>New to Toy Store? <a href="register.jsp">Create an account</a></p>
-            <p><a href="forgot_password.jsp">Forgot your password?</a></p>
+            <p>Already have an account? <a href="login.jsp">Login here</a></p>
         </div>
     </div>
 </body>

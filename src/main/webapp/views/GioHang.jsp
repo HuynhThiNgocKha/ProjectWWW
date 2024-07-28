@@ -131,12 +131,6 @@
 	    background-color: #a13030;
 	}
 	
-	.footer {
-	    background-color: #5A571B;
-	    text-align: center;
-	    padding: 10px;
-	    color: white;
-	}
 </style>
 </head>
 <body>
@@ -161,8 +155,6 @@
            </div>
            <!-- Lặp lại cấu trúc sản phẩm cho các sản phẩm khác -->
    </div>
-   <div class="footer">
-       <p>20020201 - Huỳnh Thị Ngọc Khá</p>
-   </div>
+
 </body>
 </html>

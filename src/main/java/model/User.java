@@ -1,16 +1,16 @@
-package entities;
+package model;
 
-public class Account {
+public class User {
 	private String name;
 	private String password;
 	
-	public Account(String name, String password) {
+	public User(String name, String password) {
 		super();
 		this.name = name;
 		this.password = password;
 	}
 	
-	public Account() {
+	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -30,6 +30,6 @@ public class Account {
 	
 	@Override
 	public String toString() {
-		return "Account [name=" + name + ", password=" + password + "]";
+		return "User [name=" + name + ", password=" + password + "]";
 	}
 }
